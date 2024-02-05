@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball scoreboard</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="boards">
+            <div class="board" id="boardHome"> <!-- displays home points-->
+                <p id="homePoints"></p>
+            </div>
+            <div class="board" id="boardAway"> <!-- displays away points-->
+                <p id="awayPoints"></p>
+            </div>
+        </div>
+        <div id="buttons">
+            <div class="points" id="pointsHome">
+                <button class="point onePoint" onclick="pointsHome(1)">Add 1 point</button>
+                <button class="point twoPoints" onclick="pointsHome(2)">Add 2 points</button>
+                <button class="point threePoints" onclick="pointsHome(3)">Add 3 points</button>
+            </div>
+            <div class="points" id="pointsAway">
+                <button class="point onePoint" onclick="pointsAway(1)">Add 1 point</button>
+                <button class="point twoPoints" onclick="pointsAway(2)">Add 2 points</button>
+                <button class="point threePoints" onclick="pointsAway(3)">Add 3 points</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
